@@ -27,7 +27,7 @@ Ce projet combine **IA embarquée** pour la détection faciale et une **expérie
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/votre-utilisateur/face-cropper.git
+git clone https://github.com/Endikk/profile-photo-crop.git
 cd face-cropper
 ```
 
