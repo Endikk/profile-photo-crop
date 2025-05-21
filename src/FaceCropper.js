@@ -38,7 +38,7 @@ const FaceCropper = () => {
 
       if (detection) {
         let { x, y, width, height } = detection.box;
-        // Ajouter une marge de 20% autour du visage
+        // Ajouter une marge de 70% autour du visage
         const marginRatio = 0.70;
         const imgWidth = image.width;
         const imgHeight = image.height;
