@@ -29,3 +29,69 @@ Ce projet combine **IA embarquée** pour la détection faciale et une **expérie
 ```bash
 git clone https://github.com/votre-utilisateur/face-cropper.git
 cd face-cropper
+```
+
+### 2. Installer les dépendances
+
+```bash
+npm install
+```
+
+### 3. Télécharger les modèles `face-api.js`
+Télécharge les fichiers du modèle `tiny_face_detector` depuis : 👉 https://github.com/justadudewhohacks/face-api.js-models
+Place-les dans un dossier `public/model/` comme ceci :
+
+```
+public/
+└── model/
+    ├── tiny_face_detector_model-weights_manifest.json
+    └── tiny_face_detector_model-shard1
+```
+
+### 🧪 Utilisation
+Lance le projet localement :
+
+```bash
+npm start
+```
+
+Puis ouvre dans ton navigateur : http://localhost:3000
+
+### 📝 Extrait de code principal
+Le composant `FaceCropper` permet de :
+* Charger une image,
+* Détecter un visage avec `face-api.js`,
+* Utiliser un `<canvas>` pour recadrer l'image autour du visage.
+
+```jsx
+const detection = await faceapi.detectSingleFace(
+  image,
+  new faceapi.TinyFaceDetectorOptions()
+);
+
+if (detection) {
+  const { x, y, width, height } = detection.box;
+  // Ajout de marges et création d'un canvas recadré
+}
+```
+
+### 📁 Structure du projet
+
+```
+src/
+├── components/
+│   └── FaceCropper.js
+├── App.js
+└── index.js
+```
+
+### ⚠️ Remarques
+* Le projet utilise des modèles IA en local via `/public/model`. Assure-toi que ces fichiers sont bien présents.
+* `react-easy-crop` permet un zoom manuel, mais le recadrage final est calculé par l'IA.
+* Si aucun visage n'est détecté, aucun recadrage ne sera affiché.
+
+### 🤝 Contribuer
+Les contributions sont les bienvenues ! N'hésite pas à ouvrir une **issue** ou soumettre une **pull request**.
+
+### 📄 Licence
+MIT
