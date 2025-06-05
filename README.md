@@ -10,7 +10,7 @@ Ce projet combine **IA embarquée** pour la détection faciale et une **expérie
 
 ## 🎬 Démonstration GIF
 
-![Aperçu de l'application](https://raw.githubusercontent.com/endikk/profile-photo-crop/public/demo.gif)
+<img src="https://raw.githubusercontent.com/endikk/profile-photo-crop/public/demo.gif" width="600" />
 
 *Le GIF ci-dessus montre l'utilisation de l'application.*
 
