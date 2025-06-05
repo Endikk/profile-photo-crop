@@ -8,6 +8,14 @@
 
 Ce projet combine **IA embarquée** pour la détection faciale et une **expérience utilisateur fluide** grâce à `react-easy-crop`.
 
+## 🎬 Démonstration vidéo
+
+  <summary>Voir la vidéo de démonstration</summary>
+
+  <video src="public/demo.mp4" controls width="600"></video>
+
+---
+
 ## 🚀 Fonctionnalités
 
 - 📂 Upload d'image via un `<input type="file">`
