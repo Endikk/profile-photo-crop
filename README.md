@@ -8,11 +8,11 @@
 
 Ce projet combine **IA embarquée** pour la détection faciale et une **expérience utilisateur fluide** grâce à `react-easy-crop`.
 
-## 🎬 Démonstration vidéo
+## 🎬 Démonstration GIF
 
-  <summary>Voir la vidéo de démonstration</summary>
+![Aperçu de l'application](https://raw.githubusercontent.com/endikk/profile-photo-crop/public/demo.gif)
 
-  <video src="public/demo.mp4" controls width="600"></video>
+*Le GIF ci-dessus montre l'utilisation de l'application.*
 
 ---
 
